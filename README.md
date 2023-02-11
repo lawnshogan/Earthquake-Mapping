@@ -282,7 +282,6 @@ let majorEarthquakes = new L.LayerGroup();
 
 ````
 
-![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/2.1.JPG)
 
 
 
@@ -389,7 +388,6 @@ majorEarthquakes.addTo(map);
 });
 ````
 
-![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/2.3.JPG)
 
 
 
@@ -489,7 +487,6 @@ let baseMaps = {
 };
 ````
 
-![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/3.2.JPG)
 
 
 
