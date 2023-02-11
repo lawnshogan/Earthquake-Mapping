@@ -5,7 +5,7 @@
 1. ***Deliverable 1***: Add Tectonic Plate Data
 2. ***Deliverable 2***: Add Major Earthquake Data
 3. ***Deliverable 3***: Add an Additional Map
-4. ***Deliverable 4***: A written report on the Mapping Earthquakes analysis [`README.md`](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/). 
+4. ***Deliverable 4***: A written report on the Mapping Earthquakes analysis [`README.md`](https://github.com/lawnshogan/Earthquake-Mapping). 
  
 
 ## Resources and Before Start Notes:
@@ -36,26 +36,26 @@ Now that you have an overview of the project plan, let's set up a Mapbox account
 # The Leaflet JavaScript Library
 On the [`Leaflet`](https://leafletjs.com/index.html) homepage, scroll midpage and click the [`Leaflet Quick Start Guide`](https://leafletjs.com/examples/quick-start/) link:
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/blob/main/Resources/Images/s1.png?raw=true)
+![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/s1.png)
 
 The Leaflet Quick Start Guide provides steps for setting up a Leaflet map. To begin, scroll midpage to the "Preparing your page" section:
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/blob/main/Resources/Images/s2.png?raw=true)
+![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/s2.png)
 
-The "Preparing your page" section includes links and HTML code that we'll add to our [`Mapping Earthquakes - index.html`](https://emmanuelmartinezs.github.io/Mapping_Earthquakes/) page. 
+The "Preparing your page" section includes links and HTML code that we'll add to our [`Mapping Earthquakes - index.html`](https://github.com/lawnshogan/Earthquake-Mapping) page. 
 
 
 ## Use the Leaflet Documentation
 The [`Leaflet Quick Start Guide`](https://leafletjs.com/examples/quick-start/) provides the `tileLayer()` code:
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/blob/main/Resources/Images/s3.png?raw=true)
+![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/s3.png)
 
 
 We can copy this tile layer code and assign it to the streets variable, since the tile layer will create a street-level map. Add the following code block to your `logic.js` file:
 
 ````js
 // COLUMBIA ENGINEERING 
-// By Emmanuel Martinez
+// By Shawn Logan
 // Module 13
 
 // We create the tile layer that will be the background of our map.
@@ -78,7 +78,7 @@ Using your knowledge of JavaScript, Leaflet.js, and geoJSON data, you’ll add t
 
 Your final map should look similar to the following image:
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/blob/main/Resources/Images/s4.png?raw=true)
+![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/s4.png)
 
 
 
@@ -103,7 +103,7 @@ Your final map should look similar to the following image:
 
 ````js
 // COLUMBIA ENGINEERING 
-// By Emmanuel Martinez
+// By Shawn Logan
 // Module 13
 
 // 1. Add a 2nd layer group for the tectonic plate data.
@@ -112,7 +112,7 @@ let tectonicPlates = new L.LayerGroup();
 
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/blob/main/Resources/Images/1.1.JPG?raw=true)
+![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/1.1.JPG)
 
 
 
@@ -126,7 +126,7 @@ let tectonicPlates = new L.LayerGroup();
 
 ````js
 // COLUMBIA ENGINEERING 
-// By Emmanuel Martinez
+// By Shawn Logan
 // Module 13
 
 // 2. Add a reference to the tectonic plates group to the overlays object.
@@ -180,7 +180,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
 
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/blob/main/Resources/Images/1.2.JPG?raw=true)
+![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/1.2.JPG)
 
 
 
@@ -198,7 +198,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
 
 ````js
 // COLUMBIA ENGINEERING 
-// By Emmanuel Martinez
+// By Shawn Logan
 // Module 13
 
   // 3. Use d3.json to make a call to get our Tectonic Plate geoJSON data.
@@ -212,7 +212,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
       .addTo(tectonicPlates);
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/blob/main/Resources/Images/1.3.JPG?raw=true)
+![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/1.3.JPG)
 
 
 
@@ -226,7 +226,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
 
 ````js
 // COLUMBIA ENGINEERING 
-// By Emmanuel Martinez
+// By Shawn Logan
 // Module 13
 
       // Then add the tectonicplates layer to the map.
@@ -234,7 +234,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
 
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/blob/main/Resources/Images/1.4.JPG?raw=true)
+![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/1.4.JPG)
 
 
 
@@ -246,7 +246,7 @@ Using your knowledge of JavaScript, Leaflet.js, and geoJSON data, you’ll add m
 
 Your final map should look similar to the following image:
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/blob/main/Resources/Images/s5.png?raw=true)
+![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/s5.png)
 
 
 
@@ -272,7 +272,7 @@ Your final map should look similar to the following image:
 
 ````js
 // DELIVERABLE 2
-// By Emmanuel Martinez
+// By Shawn Logan
 // Module 13
 
 // 1. Add a 3rd layer group for the tectonic plate data.
@@ -282,7 +282,7 @@ let majorEarthquakes = new L.LayerGroup();
 
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/blob/main/Resources/Images/2.1.JPG?raw=true)
+![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/2.1.JPG)
 
 
 
@@ -296,7 +296,7 @@ let majorEarthquakes = new L.LayerGroup();
 
 ````js
 // DELIVERABLE 2
-// By Emmanuel Martinez
+// By Shawn Logan
 // Module 13
 
 // 2. Add a reference to the tectonic plates group to the overlays object.
@@ -307,7 +307,7 @@ let overlays = {
 };
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/blob/main/Resources/Images/2.2.JPG?raw=true)
+![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/2.2.JPG)
 
 
 
@@ -325,7 +325,7 @@ let overlays = {
 
 ````js
 // DELIVERABLE 2
-// By Emmanuel Martinez
+// By Shawn Logan
 // Module 13
 
 
@@ -389,7 +389,7 @@ majorEarthquakes.addTo(map);
 });
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/blob/main/Resources/Images/2.3.JPG?raw=true)
+![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/2.3.JPG)
 
 
 
@@ -418,7 +418,7 @@ majorEarthquakes.addTo(map);
 });
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/blob/main/Resources/Images/2.4.JPG?raw=true)
+![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/2.4.JPG)
 
 
 
@@ -430,7 +430,7 @@ Using your knowledge of JavaScript and Leaflet.js add a third map style to your 
 
 Your final map should look similar to the following image:
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/blob/main/Resources/Images/s6.png?raw=true)
+![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/s6.png)
 
 
 
@@ -451,7 +451,7 @@ Your final map should look similar to the following image:
 
 ````js
 // DELIVERABLE 3
-// By Emmanuel Martinez
+// By Shawn Logan
 // Module 13
 
 // We create a third tile layer that will be the background of our map.
@@ -464,7 +464,7 @@ let dark = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{
 
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/blob/main/Resources/Images/3.1.JPG?raw=true)
+![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/3.1.JPG)
 
 
 
@@ -478,7 +478,7 @@ let dark = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{
 
 ````js
 // DELIVERABLE 3
-// By Emmanuel Martinez
+// By Shawn Logan
 // Module 13
 
 // Create a base layer that holds all three maps.
@@ -489,7 +489,7 @@ let baseMaps = {
 };
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/blob/main/Resources/Images/3.2.JPG?raw=true)
+![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/3.2.JPG)
 
 
 
@@ -510,15 +510,15 @@ let baseMaps = {
     Plotly.newPlot("bar", barData, barLayout);
 ````
 
-![name-of-you-image](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/blob/main/Resources/Images/3.3.JPG?raw=true)
+![name-of-you-image](https://github.com/lawnshogan/Earthquake-Mapping/blob/main/Resources/Images/3.3.JPG)
 
 
 
 # Deliverable 4:  
-A written report on the Mapping Earthquakes analysis [`README.md`](https://github.com/emmanuelmartinezs/Mapping_Earthquakes/). 
+A written report on the Mapping Earthquakes analysis [`README.md`](https://github.com/lawnshogan/Earthquake-Mapping). 
 
 
 1. **A README.md that describes the purpose of the repository. Although there is no graded written analysis for this challenge, it is encouraged and good practice to add a brief description of your project.**
 
 
-##### JavaScript, Bootstrap, and Mapping Earthquakes Analysis Completed by Emmanuel Martinez
+##### JavaScript, Bootstrap, and Mapping Earthquakes Analysis Completed by Shawn Logan
